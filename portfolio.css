@@ -42,6 +42,12 @@ h1 {
     gap: 15px;
     padding: 20px;
 }
+.gallery-item{
+    max-width: 90%; 
+    height: auto; 
+    display: block; 
+    margin-top: 20px;
+}
 .gallery img {
     width: auto;
     height: auto;
