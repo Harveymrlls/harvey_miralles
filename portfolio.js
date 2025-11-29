@@ -1,15 +1,8 @@
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize mobile menu
     initMobileMenu();
-    
-    // Initialize smooth scrolling
     initSmoothScrolling();
-    
-    // Initialize active navigation
     initActiveNavigation();
-    
-    // Initialize animations
     animateSkillMeters();
     
     // Set current year in footer
@@ -33,7 +26,7 @@ function initMobileMenu() {
                 menu.classList.add('mobile-open');
                 mobileMenuButton.classList.add('menu-open');
                 
-                // Change icon to X
+                // Change menu icon to X
                 const svg = mobileMenuButton.querySelector('svg');
                 svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
             } else {
@@ -45,7 +38,7 @@ function initMobileMenu() {
                 const svg = mobileMenuButton.querySelector('svg');
                 svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
                 
-                // Wait for transition to complete before hiding
+                // transition before hiding icon
                 setTimeout(() => {
                     if (!menu.classList.contains('mobile-open')) {
                         menu.classList.add('hidden');
